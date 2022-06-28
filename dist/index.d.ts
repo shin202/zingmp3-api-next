@@ -1,0 +1,45 @@
+declare class zingmp3 {
+    private URL;
+    private API_KEY;
+    private SECRET_KEY;
+    private CTIME;
+    private VERSION;
+    constructor(URL: string, API_KEY: string, SECRET_KEY: string, CTIME: string, VERSION: string);
+    private get_hash_256;
+    private get_hmac_512;
+    private hash_has_id_signature;
+    private hash_no_id_signature;
+    private hash_home_radio_signature;
+    private hash_list_genre_signature;
+    private hash_list_mv_signature;
+    private hash_catergory_mv_signature;
+    private hash_search_signature;
+    private get_cookie;
+    private send_request;
+    get_home(): Promise<any>;
+    get_song(id: string): Promise<any>;
+    get_song_info(id: string): Promise<any>;
+    get_song_lyric(id: string): Promise<any>;
+    get_home_chart(): Promise<any>;
+    get_new_release_chart(): Promise<any>;
+    get_week_chart(id: string, week?: number, year?: number): Promise<any>;
+    get_radio(): Promise<any>;
+    get_list_by_genre(id: string, page?: number): Promise<any>;
+    get_artist(name: string): Promise<any>;
+    get_hub_home(): Promise<any>;
+    get_hub_detail(id: string): Promise<any>;
+    get_top_100(): Promise<any>;
+    get_list_mv(id: string, page?: number, count?: number, sort?: string): Promise<any>;
+    get_category_mv(id: string): Promise<any>;
+    get_mv(id: string): Promise<any>;
+    get_playlist(id: string): Promise<any>;
+    get_events(): Promise<any>;
+    get_event_info(id: string): Promise<any>;
+    search_all(keyword: string): Promise<any>;
+    search_by_type(keyword: string, type: string, page?: number, count?: number): Promise<any>;
+    get_recommend_keyword(): Promise<any>;
+    get_suggestion_keyword(keyword?: string): Promise<any>;
+}
+export declare const zing: zingmp3;
+export {};
+//# sourceMappingURL=index.d.ts.map
