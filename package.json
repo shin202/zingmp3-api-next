@@ -1,6 +1,6 @@
 {
   "name": "zingmp3-api-next",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "types": "dist",
   "main": "dist/index.js",
@@ -24,9 +24,6 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@types/node": "^18.0.0",
     "axios": "^0.27.2",
-    "nodemon": "^2.0.18",
-    "ts-node": "^10.8.1"
   }
 }
