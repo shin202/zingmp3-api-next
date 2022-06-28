@@ -135,7 +135,9 @@ or
 ```
 
 * Week Chart 
+
 Parameters:
+
 * id: string (required)
 * week: number (optional)(default: 0)
 * year: number (optional)(default: 0)
@@ -223,9 +225,10 @@ or
 ```
 
 * Hub Detail
+
 Parameters:
 
-> id: string (required)
+* id: string (required)
 
 Example: https://zingmp3.vn/hub/Khuc-Nhac-Vui/IWZ9Z09A.html
 
