@@ -17,16 +17,16 @@
     
 ## Features
 
-* [Get Home](#-get-home)
-* [Get Song](#-get-song)
-* [Get Song Info](#-get-song-info)
-* [Get Song Lyrics](#-get-song-lyrics)
-* [Get Home Chart / New Release Chart / Week Chart](#-get-chart)
-* [Get Radio](#-get-radio)
-* [Get New Feeds](#-get-new-feeds)
-* [Get Artist](#-get-artist)
-* [Get Hub Home / Hub Detail (Category)](#-get-hub)
-* [Get Top 100](#-get-top-100)
+* [Get Home](#get-home)
+* [Get Song](#get-song)
+* [Get Song Info](#get-song-info)
+* [Get Song Lyrics](#get-song-lyrics)
+* [Get Home Chart / New Release Chart / Week Chart](#get-chart)
+* [Get Radio](#get-radio)
+* [Get New Feeds](#get-new-feeds)
+* [Get Artist](#get-artist)
+* [Get Hub Home / Hub Detail (Category)](#get-hub)
+* [Get Top 100](#get-top-100)
 * And More......... (See below)
 
 ## Usage/Examples
