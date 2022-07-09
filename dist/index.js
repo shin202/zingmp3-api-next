@@ -314,6 +314,19 @@ class zingmp3 {
             return error;
         }
     }
+    async get_suggested_playlists(id) {
+        const api_path = "/api/v2/playlist/get/section-bottom";
+        try {
+            const response = await this.send_request(api_path, {
+                id: id,
+                sig: this.hash_has_id_signature(api_path, id)
+            });
+            return response;
+        }
+        catch (error) {
+            return error;
+        }
+    }
     async get_events() {
         const api_path = "/api/v2/event/get/list-incoming";
         try {
@@ -406,6 +419,6 @@ const URL = "https://zingmp3.vn";
 const API_KEY = "88265e23d4284f25963e6eedac8fbfa3";
 const SECRET_KEY = "2aa2d1c561e809b267f3638c4a307aab";
 const CTIME = String(Math.floor(Date.now() / 1000));
-const VERSION = "1.6.34";
+const VERSION = "1.6.40";
 exports.zing = new zingmp3(URL, API_KEY, SECRET_KEY, CTIME, VERSION);
 //# sourceMappingURL=index.js.map

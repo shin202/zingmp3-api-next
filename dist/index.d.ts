@@ -33,6 +33,7 @@ declare class zingmp3 {
     get_category_mv(id: string): Promise<any>;
     get_mv(id: string): Promise<any>;
     get_playlist(id: string): Promise<any>;
+    get_suggested_playlists(id: string): Promise<any>;
     get_events(): Promise<any>;
     get_event_info(id: string): Promise<any>;
     search_all(keyword: string): Promise<any>;

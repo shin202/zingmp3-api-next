@@ -345,6 +345,28 @@ or
 })();
 ```
 
+### Get Suggested Playlists
+Get Suggested Playlists at the bottom of playlist page.
+
+Parameters: 
+* id: string (required)
+
+Example: https://zingmp3.vn/album/Today-s-EDM-Hits-The-Chainsmokers-Alan-Walker-Alesso-Topic/ZODAB8EF.html
+
+=> The ID is: ZODAB8EF
+
+```javascript
+<!-- Promise -->
+zing.get_suggested_playlists("ZODAB8EF")
+.then(data => console.log(data))
+or
+<!-- async / await -->
+(async() => {
+  const data = await zing.get_suggested_playlists("ZODAB8EF");
+  console.log(data);
+})();
+```
+
 ### Get Events
 Get Incoming Events
 

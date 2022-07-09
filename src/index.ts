@@ -391,6 +391,21 @@ class zingmp3 {
 
     }
 
+    public async get_suggested_playlists(id: string): Promise<any> {
+        const api_path = "/api/v2/playlist/get/section-bottom";
+
+        try {
+            const response = await this.send_request(api_path, {
+                id: id,
+                sig: this.hash_has_id_signature(api_path, id)
+            });
+
+            return response;
+        } catch (error) {
+            return error;
+        }
+    }
+
     public async get_events(): Promise<any> {
         const api_path = "/api/v2/event/get/list-incoming";
 
@@ -494,7 +509,7 @@ const URL: string = "https://zingmp3.vn";
 const API_KEY: string = "88265e23d4284f25963e6eedac8fbfa3";
 const SECRET_KEY: string = "2aa2d1c561e809b267f3638c4a307aab";
 const CTIME: string = String(Math.floor(Date.now() / 1000));
-const VERSION: string = "1.6.34";
+const VERSION: string = "1.6.40";
 
 export const zing = new zingmp3(
     URL,
