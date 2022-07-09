@@ -1,6 +1,6 @@
 {
   "name": "zingmp3-api-next",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "types": "dist",
   "main": "dist/index.js",
